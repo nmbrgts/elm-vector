@@ -2,6 +2,7 @@ module Vector.Core
     exposing
         ( Vector(..)
         , fromList
+        , toList
         , cross_
         , monomap
         , monofold
@@ -22,6 +23,16 @@ fromList l =
         Vector { dimensions = List.length l, values = l }
     else
         Invalid
+
+
+toList : Vector -> List Float
+toList v =
+    case v of
+        Vector {dimensions, values} ->
+            values
+
+        Invalid ->
+            []
 
 
 cross_ : List Float -> List Float -> Vector

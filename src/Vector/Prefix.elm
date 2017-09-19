@@ -1,6 +1,7 @@
 module Vector.Prefix
     exposing
         ( fromList
+        , toList
         , add
         , subtract
         , scale
@@ -22,6 +23,9 @@ fromList =
     Core.fromList
 
 
+toList : Vector -> List Float
+toList =
+    Core.toList
 
 -- getters that return Result type
 -- Result type returns for Invalid?

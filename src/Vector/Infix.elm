@@ -1,6 +1,7 @@
 module Vector.Infix
     exposing
         ( fromList
+        , toList
         , (.+)
         , (.-)
         , (.*)
@@ -16,6 +17,10 @@ fromList : List Float -> Vector
 fromList =
     Core.fromList
 
+
+toList : Vector -> List Float
+toList =
+    Core.toList
 
 
 --add
