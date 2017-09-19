@@ -1,0 +1,18 @@
+{
+    "version": "0.1.0",
+    "summary": "Yet another vector library! Mostly a practice project but, could be helful in developing colision detection libraries. Still needs a lot of work",
+    "repository": "https://github.com/user/project.git",
+    "license": "BSD3",
+    "source-directories": [
+        "src"
+    ],
+    "exposed-modules": [
+	"Vector.Prefix",
+	"Vector.Infix"
+    ],
+    "dependencies": {
+        "elm-lang/core": "5.1.1 <= v < 6.0.0",
+        "elm-lang/html": "2.0.0 <= v < 3.0.0"
+    },
+    "elm-version": "0.18.0 <= v < 0.19.0"
+}
